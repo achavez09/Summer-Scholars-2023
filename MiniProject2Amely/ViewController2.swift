@@ -9,12 +9,19 @@ import UIKit
 
 class ViewController2: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+    @IBOutlet weak var answerDisplay: UILabel!
     
+    
+
+    @IBAction func response1 (_sender: UIButton) {
+        answerDisplay.text = "✅"
+    }
+    @IBAction func response2 (_sender: UIButton) {
+        answerDisplay.text = "❌"
+    }
+    @IBAction func response3 (_sender: UIButton) {
+        answerDisplay.text = "❌"
+    }
 
     /*
     // MARK: - Navigation
